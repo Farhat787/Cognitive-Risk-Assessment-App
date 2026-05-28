@@ -25,5 +25,4 @@ env/
 *.log
 
 # Private Notes
-variable-mapping.md
-variable-mapping.pdf
+variable-mapping.*
