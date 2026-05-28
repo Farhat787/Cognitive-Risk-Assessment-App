@@ -253,11 +253,11 @@ st.markdown('<div class="section-head s-phys"><i class="ti ti-activity"></i><spa
 
 col1, col2 = st.columns(2)
 with col1:
-    pc13up20stair = st.selectbox("Walk up 20 stairs?",          list(yes_no.keys()), format_func=lambda x: yes_no[x])
-    pc13bendover  = st.selectbox("Bend over?",                  list(yes_no.keys()), format_func=lambda x: yes_no[x])
+    pc13up20stair = st.selectbox("Are you able to walk up 20 stairs?",          list(yes_no.keys()), format_func=lambda x: yes_no[x])
+    pc13bendover  = st.selectbox("Are you able to bend over?",                  list(yes_no.keys()), format_func=lambda x: yes_no[x])
 with col2:
-    pc13car20pnds = st.selectbox("Carry 20 pounds?",            list(yes_no.keys()), format_func=lambda x: yes_no[x])
-    pc13hvobovrhd = st.selectbox("Lift heavy object overhead?", list(yes_no.keys()), format_func=lambda x: yes_no[x])
+    pc13car20pnds = st.selectbox("Are you able to carry 20 pounds?",            list(yes_no.keys()), format_func=lambda x: yes_no[x])
+    pc13hvobovrhd = st.selectbox("Are you able to lift heavy objects overhead?", list(yes_no.keys()), format_func=lambda x: yes_no[x])
 
 # ==================================================
 # SECTION: Memory & Function

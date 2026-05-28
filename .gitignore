@@ -23,3 +23,7 @@ env/
 
 # Logs
 *.log
+
+# Private Notes
+.variable-mapping.md
+.variable-mapping.pdf
