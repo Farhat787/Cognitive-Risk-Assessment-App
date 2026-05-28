@@ -222,8 +222,8 @@ race_map = {
     2: "Black, non-Hispanic",
     3: "Other, non-Hispanic",
     4: "Hispanic",
-    5: "More than one / DKRF primary",
-    6: "DKRF"
+    5: "More than one",
+    6: "Unknown / Prefer not to answer"
 }
 yes_no             = {1: "Yes", 2: "No"}
 memory_rating      = {1: "Excellent", 2: "Very Good", 3: "Good", 4: "Fair", 5: "Poor"}
@@ -267,10 +267,10 @@ st.markdown('<div class="section-head s-mem"><i class="ti ti-bulb"></i><span>Mem
 col1, col2 = st.columns(2)
 with col1:
     cg13ratememry = st.selectbox("Rate your memory",           list(memory_rating.keys()),    format_func=lambda x: memory_rating[x])
-    mo13outhlp    = st.selectbox("Need help going outside?",   list(yes_no.keys()),            format_func=lambda x: yes_no[x])
+    mo13outhlp    = st.selectbox("Do you need help going outside?",   list(yes_no.keys()),            format_func=lambda x: yes_no[x])
 with col2:
-    cg13ofmemprob = st.selectbox("Memory problems interfere?", list(memory_interfere.keys()), format_func=lambda x: memory_interfere[x])
-    mo13beddev    = st.selectbox("Device to get out of bed?",  list(bed_device_map.keys()),   format_func=lambda x: bed_device_map[x])
+    cg13ofmemprob = st.selectbox("How often do memory problems interfere?", list(memory_interfere.keys()), format_func=lambda x: memory_interfere[x])
+    mo13beddev    = st.selectbox("How often do you use any assistive device when getting out of bed?",  list(bed_device_map.keys()),   format_func=lambda x: bed_device_map[x])
 
 # ==================================================
 # SECTION: Wellbeing
@@ -282,7 +282,7 @@ col1, col2 = st.columns(2)
 with col1:
     wb13truestme3 = st.selectbox('"I gave up improving my life"', list(true_me_map.keys()),        format_func=lambda x: true_me_map[x])
 with col2:
-    wb13agrwstmt1 = st.selectbox("Self-determination",            list(self_determination.keys()), format_func=lambda x: self_determination[x])
+    wb13agrwstmt1 = st.selectbox('"I am able to make my own decisions"',            list(self_determination.keys()), format_func=lambda x: self_determination[x])
 
 # ==================================================
 # PREDICT BUTTON + RESULT
