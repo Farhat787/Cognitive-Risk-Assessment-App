@@ -47,7 +47,7 @@ The application displays human-readable survey labels while preserving the origi
 ---
 
 ## Live Application
-
+[Cognitive Risk Assessment App](https://uncw-cognitive-risk-assessment-app.streamlit.app/)
 
 ---
 
