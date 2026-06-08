@@ -280,7 +280,7 @@ st.markdown('<div class="section-head s-well"><i class="ti ti-heart"></i><span>W
 wb13offelche1 = st.selectbox("How often do you feel cheerful?", list(cheerful_map.keys()), format_func=lambda x: cheerful_map[x])
 col1, col2 = st.columns(2)
 with col1:
-    wb13truestme3 = st.selectbox('"I gave up improving my life"', list(true_me_map.keys()),        format_func=lambda x: true_me_map[x])
+    wb13truestme3 = st.selectbox('"I gave up improving my life"', list(true_me_map.keys()), index=2, format_func=lambda x: true_me_map[x])
 with col2:
     wb13agrwstmt1 = st.selectbox('"I am able to make my own decisions"',            list(self_determination.keys()), format_func=lambda x: self_determination[x])
 

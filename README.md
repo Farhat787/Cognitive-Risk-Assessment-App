@@ -1,81 +1,111 @@
-# Dementia Risk Prediction App
+# Dementia Cognitive Risk Assessment App
 
-A Streamlit-based machine learning application developed for the School of Nursing at the University of North Carolina Wilmington (UNCW). This application provides an interactive interface for testing a trained logistic regression pipeline model that estimates dementia risk probability based on survey and functional assessment variables.
+A clinical screening tool developed for the School of Nursing at UNC
+Wilmington to support an ongoing dementia research study. Built as a
+production Streamlit application on top of a logistic regression
+pipeline trained on NHATS (National Health and Aging Trends Study) data.
 
-## Overview
-
-This project was created as part of a machine learning and health informatics initiative to explore how demographic, cognitive, wellbeing, and functional ability variables can be used to estimate dementia risk.
-
-The application allows users to:
-
-* Enter survey-based assessment information
-* Generate a dementia risk prediction
-* View the estimated probability of dementia
-* Interact with a clean and user-friendly interface
-
-The app is designed for educational, research, and demonstration purposes.
+[![Live App](https://img.shields.io/badge/🚀%20Live%20App-Streamlit-FF4B4B?style=for-the-badge)](https://uncw-cognitive-risk-assessment-app.streamlit.app/)
 
 ---
 
-## Technologies Used
+## Background
 
-* Python
-* Streamlit
-* Scikit-learn
-* Pandas
-* Joblib
+This project originated as a two-semester research practicum conducted
+with a team of three students and a faculty supervisor for UNCW's nursing
+department. The team built and validated a logistic regression pipeline
+using NHATS data to estimate dementia probability from cognitive,
+demographic, functional, and wellbeing variables — with feature selection
+guided by nursing faculty for clinical relevance.
+
+Following model completion, I was individually commissioned by the nursing
+department to design and deploy the model as an interactive Streamlit
+application for use in their research study.
+
+---
+
+## Screenshots
+
+![Input Form - Part 1](assets/screenshot_input01.png)
+![Input Form - Part 2](assets/screenshot_input02.png)
+![Risk Results](assets/screenshot_result.png)
+
+---
+
+## Features
+
+- Survey-based assessment input form with human-readable labels
+- Real-time dementia risk probability estimation
+- Color-coded risk visualization by severity level
+- Circular arc gauge for intuitive risk display
+- Clean, accessible UI designed for research use
 
 ---
 
 ## Model Information
 
-The deployed model is a trained logistic regression pipeline saved as:
-
-```text
-final_log_reg_pipeline_model.pkl
-```
-
-The model uses a combination of:
-
-* Demographic variables
-* Physical ability indicators
-* Memory and cognitive assessment variables
-* Wellbeing-related survey measures
-
-The application displays human-readable survey labels while preserving the original encoded values required by the trained model.
+- **Algorithm:** Logistic Regression Pipeline
+- **Dataset:** NHATS (National Health and Aging Trends Study)
+- **Feature categories:** Demographic variables · Physical ability
+  indicators · Memory and cognitive assessments · Wellbeing measures
+- **Model file:** `final_log_reg_pipeline_model.pkl`
 
 ---
 
-## Live Application
-[Cognitive Risk Assessment App](https://uncw-cognitive-risk-assessment-app.streamlit.app/)
+## Tech Stack
 
----
-
-## Deployment
-
-This application is designed to be deployed using Streamlit Community Cloud.
+| Layer | Tools |
+|---|---|
+| Interface | Streamlit |
+| Modeling | scikit-learn · pandas · Joblib |
+| Data & Exploration | Databricks · NumPy |
+| Language | Python |
 
 ---
 
 ## Project Structure
 
 ```text
+├── streamlit/
+│   ├── config.toml
 ├── app.py
 ├── final_log_reg_pipeline_model.pkl
 ├── requirements.txt
+├── assets/
+│   ├── screenshot_input01.png
+│   ├── screenshot_input02.png
+│   └── screenshot_result.png
 ├── .gitignore
 └── README.md
 ```
 
 ---
 
+## Run Locally
+
+For developers reviewing the project:
+
+```bash
+git clone https://github.com/farhatjoyan/Cognitive-Risk-Assessment-App
+cd Cognitive-Risk-Assessment-App
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+The live deployed version is available at the link above for end users
+and research purposes.
+
+---
+
 ## Disclaimer
 
-This application is intended for academic, educational, and research demonstration purposes only. It is not intended for clinical diagnosis, medical decision-making, or patient treatment.
+This application is intended for academic, educational, and research
+demonstration purposes only. It is not intended for clinical diagnosis,
+medical decision-making, or patient treatment.
 
 ---
 
 ## Author
 
-Farhat Joyan
-University of North Carolina Wilmington (UNCW)
+**Farhat Joyan** · MS in AI & Data Science @ UNCW
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/farhat-joyan-7aa7132a2/)
