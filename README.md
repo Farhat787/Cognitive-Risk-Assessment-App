@@ -26,9 +26,9 @@ application for use in their research study.
 
 ## Screenshots
 
-![Input Form - Part 1](assets/screenshot_input01.png)
-![Input Form - Part 2](assets/screenshot_input02.png)
-![Risk Results](assets/screenshot_result.png)
+![Input Form - Part 1](assets/Screenshot_input01.png)
+![Input Form - Part 2](assets/Screenshot_input02.png)
+![Risk Results](assets/Screenshot_result.png)
 
 ---
 
@@ -72,9 +72,9 @@ application for use in their research study.
 ├── final_log_reg_pipeline_model.pkl
 ├── requirements.txt
 ├── assets/
-│   ├── screenshot_input01.png
-│   ├── screenshot_input02.png
-│   └── screenshot_result.png
+│   ├── Screenshot_input01.png
+│   ├── Screenshot_input02.png
+│   └── Screenshot_result.png
 ├── .gitignore
 └── README.md
 ```
